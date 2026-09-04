@@ -20,5 +20,5 @@ end or3;
 architecture structural of or3 is
 
     begin
-        output <= input1 or input2 or input3 
+        output <= input1 or input2 or input3;
     end structural;

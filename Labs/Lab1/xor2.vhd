@@ -18,7 +18,7 @@ end xor2;
 architecture structural of xor2 is
     
     begin
-        output <= input2 xor input1
+        output <= input2 xor input1;
     end structural; 
 
 
