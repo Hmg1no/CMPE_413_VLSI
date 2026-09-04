@@ -3,6 +3,10 @@
 -- Created: 9/1/2026
 -- Architectural: structural 
 
+library STD;
+library IEEE; 
+use IEEE.std_logic_1164.all; 
+
 entity or2 is
     port(
         input1 : in std_logic;

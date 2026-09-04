@@ -1,2 +1,10 @@
 CMOS VLSI Book.pdf
 Remote Desktop process.md
+xrun.log
+xrner.key
+xrun.history
+xcelium.d/
+waves.shm/
+vhdl/*
+!vhdl/.gitkeep
+Lab machine workflow.txt
