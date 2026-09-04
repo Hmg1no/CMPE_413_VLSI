@@ -7,6 +7,7 @@ library STD;
 library IEEE;
 use IEEE.std_logic_1164.all;
 
+-- Port definitions for the ybit select to be used in the ALU.
 entity ybit_select is
     port(
         Bin : in std_logic_vector(3 downto 0);
@@ -14,7 +15,6 @@ entity ybit_select is
         s1_in: in std_logic;
         Y_out: out std_logic_vector(3 downto 0)
         );
-
 end ybit_select;
 
 architecture structural of ybit_select is 
@@ -27,8 +27,7 @@ architecture structural of ybit_select is
             S0: in std_logic;
             B: in std_logic;
             ySel: out std_logic 
-        );
-
+        );  
     end component;
 
     -- For the 4 cases of the 4 bit input, we will need 4 ybit select components to select 

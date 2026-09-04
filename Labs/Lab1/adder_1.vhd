@@ -7,6 +7,7 @@ library STD;
 library IEEE;
 use IEEE.std_logic_1164.all; 
 
+-- Port definitions for the 1 bit adder to be used in the 4 bit adder.
 entity adder_1 is
     port(
         input1: in std_logic;
@@ -19,8 +20,10 @@ entity adder_1 is
 end adder_1;
     
 
+-- Architecture for the 1 bit adder to be used in the 4 bit adder.
 architecture structural of adder_1 is
 
+    -- Componets for the 1 bit adder to be used in the 4 bit adder.
     component xor2
         port(
             input1: in std_logic;
@@ -55,7 +58,8 @@ architecture structural of adder_1 is
         -- AandB AandB output 
         -- AXB_Cin AXB and Cinput output 
 
-
+    -- Signal declarations for the 1 bit adder to be used in the 4 bit adder. 
+    -- Used full adder logic to implement the 1 bit adder to be used in the 4 bit adder.
     begin
         xor2_1: xor2 port map (input1, input2, AXB);
         xor2_2: xor2 port map (AXB, carryI, Sum);
