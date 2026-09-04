@@ -1,4 +1,4 @@
--- Entity: adder1
+-- Entity: adder_1
 -- Author: Hazael Magino
 -- Created: 09/01/2026
 -- Architectural: structural 
@@ -7,19 +7,19 @@ library STD;
 library IEEE;
 use IEEE.std_logic_1164.all; 
 
-entity adder1 is
+entity adder_1 is
     port(
         input1: in std_logic;
         input2: in std_logic;
         carryI: in std_logic;
-        Sum: out std_logic;
+        sum: out std_logic;
         carryO: out std_logic
         );
 
-end adder1;
+end adder_1;
     
 
-architecture structural of adder1 is
+architecture structural of adder_1 is
 
     component xor2
         port(
@@ -61,6 +61,6 @@ architecture structural of adder1 is
         xor2_2: xor2 port map (AXB, carryI, Sum);
         and2_1: and2 port map (input1, input2, AandB);
         and2_2: and2 port map (AXB, carryI, AXB_Cin); 
-        or2: or2_1 port map (AXB_Cin, AandB, carryO);
+        or2_1: or2 port map (AXB_Cin, AandB, carryO);
 
     end structural; 

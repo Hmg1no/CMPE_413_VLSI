@@ -35,14 +35,14 @@ architecture structural of ybit_select is
     -- which bit of the 4 bit input will be sent to the output.
 
     for yb0, yb1, yb2, yb3: ybit use entity work.ybit(structural);
-
-    begin
+    
     -- Port Mappings for each select bit option to be sent to the y-output.
 
-    yb0: ybit port map(s1_in, s0_in, Bin(0), Y_out(0));
-    yb1: ybit port map(s1_in, s0_in, Bin(1), Y_out(1));
-    yb2: ybit port map(s1_in, s0_in, Bin(2), Y_out(2));
-    yb3: ybit port map(s1_in, s0_in, Bin(3), Y_out(3));
-    
+    begin
+        yb0: ybit port map(s1_in, s0_in, Bin(0), Y_out(0));
+        yb1: ybit port map(s1_in, s0_in, Bin(1), Y_out(1));
+        yb2: ybit port map(s1_in, s0_in, Bin(2), Y_out(2));
+        yb3: ybit port map(s1_in, s0_in, Bin(3), Y_out(3));
+        
     end structural;
 
