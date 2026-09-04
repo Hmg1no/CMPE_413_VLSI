@@ -13,10 +13,10 @@ entity or2 is
         input2 : in std_logic;
         output : out std_logic
     );
-    
+
     end or2;
 
-architecture structural or2 is
+architecture structural of or2 is
 
     begin
         output <= input1 or input2;
