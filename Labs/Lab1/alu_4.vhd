@@ -50,6 +50,6 @@ architecture structural of alu_4 is
     begin
         --ALU signal inputs and outputs to the ybit_select and adder4 components to perform the ALU operations specified in the assignment document.
         Y_select: ybit_select port map(B, S0, S1, Y);
-        alu_op: adder4 port map(A_in, Y, carryI, G, Cout);
+        alu_op: adder4 port map(A, Y, Cin, G, Cout);
     end structural; 
 
