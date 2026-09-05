@@ -1,4 +1,4 @@
--- Entity: alu_4_test_stdout
+-- Testbench: alu_4_test_stdout
 -- Author: Hazael Magino
 -- Structure: Behavioral 
 -- Date: 9/5/2026
@@ -128,7 +128,6 @@ architecture behavioral  of alu_4_test_stdout is
                 wait for 10 ns;
                 print_result("S1S0= 11 (transfer)");
 
-                wait for 10 ns; -- wait for 10 ns to allow the last operation to complete before ending the simulation
         end process;
                 
 end behavioral;
