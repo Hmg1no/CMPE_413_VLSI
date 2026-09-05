@@ -13,12 +13,12 @@ use IEEE.std_logic_textio.all; -- library for textio to be used in the testbench
 --References for testbench basics: https://www.fpgatutorial.com/how-to-write-a-basic-testbench-using-vhdl/
 
 entity alu_4_test_fileIO is
-end entity alu_4_test_fileIO;
+end alu_4_test_fileIO;
 
 architecture behavioral of alu_4_test_fileIO is
 
     -- Component declaration for the ALU to be tested in this testbench.
-    component alu_4 is
+    component alu_4
         port(
             A: in std_logic_vector(3 downto 0);
             B: in std_logic_vector(3 downto 0);

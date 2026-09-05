@@ -19,7 +19,7 @@ end alu_4_test_stdout;
 architecture behavioral  of alu_4_test_stdout is
 
     -- Component declaration for the ALU to be tested in this testbench.
-    component alu_4 is
+    component alu_4
         port(
             A: in std_logic_vector(3 downto 0);
             B: in std_logic_vector(3 downto 0);
