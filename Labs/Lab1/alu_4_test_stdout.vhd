@@ -14,7 +14,7 @@ use ieee.std_logic_textio.all; -- library for textio to be used in the testbench
 
 -- Testbench for the 4 bit ALU to test the operations specified in the assignment document.
 entity alu_4_test_stdout is
-end entity alu_4_test_stdout;
+end alu_4_test_stdout;
 
 architecture behavioral  of alu_4_test_stdout is
 
@@ -65,7 +65,7 @@ architecture behavioral  of alu_4_test_stdout is
                         write(v_OLINE, string'(" G=")); write(v_OLINE, w_G);
                         write(v_OLINE, string'(" Cout="));  write(v_OLINE, w_Cout);
                         writeline(output, v_OLINE);
-                end procedure;
+                end;
 
             begin
 

@@ -32,8 +32,8 @@ architecture behavioral of alu_4_test_fileIO is
 
     for DUT : alu_4 use entity work.alu_4(Structural); -- bind DUT to the compiled alu_4 
     
-    file file_VECTORS: text;
-    file file_RESULTS: text;
+    file file_VECTORS: text is in "alu_4_in.txt"; -- input file for the ALU testbench (VHDL-87 standard)
+    file file_RESULTS: text is in "alu_4_out.txt"; -- output file for the ALU testbench (VHDL-87 standard)
 
     signal r_A: std_logic_vector(3 downto 0); -- read signal for input A
     signal r_B: std_logic_vector(3 downto 0); -- read signal for input B
