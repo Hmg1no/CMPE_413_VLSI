@@ -103,6 +103,8 @@ begin
         -- Close the input and output files after the simulation is done
         file_close(file_VECTORS); 
         file_close(file_RESULTS); 
+        
+        wait;               
 
     end process;
 

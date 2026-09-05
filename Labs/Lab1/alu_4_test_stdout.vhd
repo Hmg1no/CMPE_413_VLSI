@@ -128,6 +128,7 @@ architecture behavioral  of alu_4_test_stdout is
                 wait for 10 ns;
                 print_result("S1S0= 11 (transfer)");
 
+                wait;               
         end process;
                 
 end behavioral;
