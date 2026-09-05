@@ -6,8 +6,8 @@
 library IEEE;
 library STD;
 use ieee.std_logic_1164.all;
-use STD.textio.all; -- librar
-use ieee.std_logic_textio.all; -- library for textio to be used in the testbench to support the print_result procedure and to print the results of the ALU operation to the console.
+use STD.textio.all; 
+use ieee.std_logic_textio.all; -- library for textio to be used in the testbench to support the write operations and print_result procedure and to print the results of the ALU operation to the console.
 
 --References for file io: https://nandland.com/file-input-output/
 --References for testbench basics: https://www.fpgatutorial.com/how-to-write-a-basic-testbench-using-vhdl/
