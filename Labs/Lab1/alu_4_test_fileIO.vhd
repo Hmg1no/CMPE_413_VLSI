@@ -104,8 +104,7 @@ begin
         file_close(file_VECTORS); 
         file_close(file_RESULTS); 
         
-        wait;               
-
+    wait;               
     end process;
 
 end behavioral; 
