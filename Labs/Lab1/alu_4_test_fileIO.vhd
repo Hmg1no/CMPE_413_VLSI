@@ -97,7 +97,6 @@ begin
                 write(v_OLINE, w_G); -- write the output G to the output line
                 write(v_OLINE, string'(" ")); -- space for formatting 
                 write(v_OLINE, w_COUT); -- write the output Cout to the output line
-                write(v_OLINE, string'(" ")); 
                 writeline(file_RESULTS, v_OLINE); -- write the output line to the output file
             end loop;
         -- Close the input and output files after the simulation is done
